@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#113e4d">
+  <meta name="description" content="一个人，一只小船，一片没有边界的海。潮汐离线自由航行。">
+  <title>潮汐 TIDAL — 自由航行</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23194650'/%3E%3Cpath d='M7 17q6-7 13 0t13 0M7 25q6-7 13 0t13 0' fill='none' stroke='%23d9ede6' stroke-width='2.5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sailing.css">
+  <link rel="stylesheet" href="cinema.css">
+  <link rel="stylesheet" href="liquid-glass.css">
+</head>
+<body>
+  <nav id="languageSwitch" class="language-switch interface" aria-label="语言"><button type="button" data-language="zh" aria-pressed="true" lang="zh-CN">中文</button><span aria-hidden="true">/</span><button type="button" data-language="en" aria-pressed="false" lang="en">EN</button></nav>
+  <canvas id="ocean" aria-label="自由航行海景，WASD 驾驶，E 或 Shift 加速，Space 水面漂移或水下快速上浮，数字 1—9 换载具，0 为第十款，G 巨浪，L 随机浪区，F11 全屏锁定并隐藏鼠标，Alt 释放鼠标" tabindex="0"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+  <div id="loading" class="loading"><div class="loading-wave">≈</div><span>海风正在抵达</span></div>
+  <div id="error" class="error" hidden><h1>海景暂时无法启动</h1><p id="errorText"></p><button id="retry">重新加载</button></div>
+  <header class="topbar interface">
+    <nav class="top-actions" aria-label="场景工具">
+      <button class="icon-button" id="sound" title="开启海浪声音" aria-label="开启海浪声音" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-waves" d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/><path class="sound-muted" d="m16 9 6 6m0-6-6 6"/></svg></button>
+      <button class="icon-button" id="fullscreen" title="全屏观看（F11）" aria-label="全屏观看，F11 进入或退出" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m8 0h5v-5"/></svg></button>
+      <button class="icon-button" id="hide" title="隐藏界面（H）" aria-label="隐藏界面"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </nav>
+  </header>
+  <div class="quality interface game-only" hidden><button id="quality" class="quality-control" title="选择分辨率" aria-haspopup="dialog" aria-controls="resolutionDialog" aria-expanded="false"><span id="qualityLabel">高清</span></button><span class="quality-dot" aria-hidden="true"></span><button id="fpsControl" class="quality-control" title="选择帧率" aria-haspopup="dialog" aria-controls="fpsDialog" aria-expanded="false"><small id="renderLabel">-- FPS</small></button></div>
+  <dialog id="resolutionDialog" class="display-dialog interface" aria-labelledby="resolutionTitle">
+    <header class="display-heading"><h2 id="resolutionTitle">分辨率</h2><button data-close-display aria-label="关闭分辨率选择">×</button></header>
+    <div class="display-options" role="group" aria-label="选择分辨率"><button data-resolution="720" aria-pressed="false">720p</button><button data-resolution="1080" aria-pressed="false">1080p</button><button data-resolution="1440" aria-pressed="false">1440p</button><button data-resolution="2160" aria-pressed="false">4K · 2160p</button><button data-resolution="auto" aria-pressed="true">自适应</button></div>
+    <output id="resolutionActual" class="display-actual">当前渲染：—</output>
+  </dialog>
+  <dialog id="fpsDialog" class="display-dialog interface" aria-labelledby="fpsTitle">
+    <header class="display-heading"><h2 id="fpsTitle">帧率上限</h2><button data-close-display aria-label="关闭帧率选择">×</button></header>
+    <div class="display-options fps-options" role="group" aria-label="选择帧率上限"><button data-fps="30" aria-pressed="false">30</button><button data-fps="60" aria-pressed="false">60</button><button data-fps="90" aria-pressed="false">90</button><button data-fps="120" aria-pressed="false">120</button><button data-fps="144" aria-pressed="false">144</button><button data-fps="165" aria-pressed="false">165</button><button data-fps="240" aria-pressed="false">240</button><button data-fps="300" aria-pressed="false">300</button><button data-fps="auto" aria-pressed="true">自适应</button></div>
+  </dialog>
+  <section id="nitroHud" class="nitro-hud interface game-only" aria-label="氮气充能状态" hidden>
+    <meter id="nitroMeter" min="0" max="1" value="1" aria-label="氮气充能" aria-valuetext="100%"></meter>
+    <div class="nitro-track" aria-hidden="true"><span class="nitro-fill"></span><span class="nitro-sparkles"></span></div>
+  </section>
+  <dialog id="modelWorkbench" class="model-workbench interface" aria-labelledby="modelWorkbenchTitle" aria-describedby="modelStatus">
+    <header class="model-heading"><div><h2 id="modelWorkbenchTitle">模型调试台</h2><p>导入 · 调整 · 试驾 · 保存</p></div><button id="closeModels" aria-label="关闭模型调试台">×</button></header>
+    <div class="model-library-row"><select id="modelLibrary" aria-label="已保存的自定义模型"><option value="">暂无已保存模型</option></select><button id="loadModel">加载编辑</button><button id="removeModel">移除</button></div>
+    <div class="model-columns">
+      <section class="model-preview-column" aria-label="模型预览">
+        <div class="model-preview-surface"><canvas id="modelPreview" aria-label="模型三维预览，拖动旋转，滚轮缩放" tabindex="0"></canvas><span class="model-preview-hint">拖动旋转 · 滚轮缩放 · 网格为水线</span></div>
+        <p id="modelFacts">预览区 · 拖动旋转，滚轮缩放 · 网格平面代表水线</p>
+        <div class="model-tools"><button id="chooseModel">导入 GLB</button><button id="frameModel">居中查看</button><button id="rotateModel">转向 90°</button></div>
+        <input id="modelFile" type="file" accept=".glb" hidden>
+      </section>
+      <section class="model-fields" aria-label="模型属性">
+        <label class="model-wide">名称<input data-model-field="name" maxlength="60" required value="我的模型"></label>
+        <label class="model-wide">载具类别<select data-model-field="kind"><option value="car">汽车</option><option value="boat">船／摩托艇</option><option value="other">角色／其他</option></select></label>
+        <label>最长边（米）<input data-model-field="size" type="number" min="0.1" max="30" step="0.1" value="4.5" required></label>
+        <label>浮水高度（米）<input data-model-field="height" type="number" min="-15" max="15" step="0.05" value="0.05" required></label>
+        <label>左右朝向（度）<input data-model-field="yaw" type="number" min="-360" max="360" step="1" value="0" required></label>
+        <label>前后翻转（度）<input data-model-field="pitch" type="number" min="-360" max="360" step="1" value="0" required></label>
+        <label>左右倾斜（度）<input data-model-field="roll" type="number" min="-360" max="360" step="1" value="0" required></label>
+        <label>镜头距离倍率<input data-model-field="camera" type="number" min="0.5" max="3" step="0.05" value="1" required></label>
+        <label>常规速度 km/h<input data-model-field="normal" type="number" min="5" max="500" step="1" value="120" required></label>
+        <label>氮气速度 km/h<input data-model-field="boost" type="number" min="5" max="600" step="1" value="180" required></label>
+        <label class="model-wide">模型自带动作<select data-model-field="animation"><option value="">不播放动作</option></select></label>
+        <p class="model-wide model-note">自定义载具隐藏驾驶员。下方 DIY 可设置尾焰、转轮、转向及动作；配置随模型保存。</p>
+        <div class="model-wide model-tools"><button id="resetModelConfig">重置参数</button><button id="exportModelConfig">导出配置</button><button id="chooseModelConfig">导入配置</button></div>
+        <input id="modelConfigFile" type="file" accept=".json" hidden>
+      </section>
+    </div>
+    <section id="modelDiy" class="model-diy" aria-label="模型调试扩展"></section>
+    <p id="modelStatus" role="status" aria-live="polite">选择一个 GLB，或从已保存的模型库加载。</p>
+    <footer class="model-footer"><span>模型库保存在当前浏览器；请另行保留 GLB 与导出的配置。</span><button id="cancelModel">取消</button><button id="tryModel">试驾（不保存）</button><button id="saveModel" class="model-primary">保存并应用</button></footer>
+  </dialog>
+  <aside id="visual-panel" class="visual-panel interface" aria-label="画面设置" hidden>
+    <div class="panel-heading"><span>画面与航行</span><button id="close-visual" aria-label="关闭画面设置">×</button></div>
+    <div class="lens-options"><button id="openModels">我的模型 · 导入 / 编辑 GLB</button><button id="useCustomModel" aria-pressed="false" disabled>驾驶自定义载具</button></div>
+    <details id="time-panel" class="time-panel">
+      <summary aria-label="展开时间选择"><span>时间 <output id="gameClock">10:00</output></span><span id="timeModeLabel">自动</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m4 6 4 4 4-4"/></svg></summary>
+      <div class="time-options" role="group" aria-label="光照时刻"><button data-time="auto" aria-pressed="true">自动时间</button><button data-light="0" aria-pressed="false">晴空</button><button data-light="1" aria-pressed="false">日落</button><button data-light="2" aria-pressed="false">蓝调</button></div>
+    </details>
+    <span class="setting-label">载具 · 1—9 / 0 · 常规 / 氮气 km/h</span>
+    <div class="filter-options vehicle-options" role="group" aria-label="选择载具"><button data-vehicle="rowboat" aria-pressed="false">1 · HERON 木船</button><button data-vehicle="jetski" aria-pressed="true">2 · Sea-Doo · 70 / 120</button><button data-vehicle="kawasaki" aria-pressed="false">3 · Kawasaki · 85 / 140</button><button data-vehicle="speedboat" aria-pressed="false">4 · ORCA · 100 / 160</button><button data-vehicle="mercedes" aria-pressed="false">5 · AMG GT3 · 240 / 340</button><button data-vehicle="xiaomi" aria-pressed="false">6 · 小米 SU7 Ultra · 260 / 380</button></div>
+    <div class="filter-options vehicle-options" role="group" aria-label="新增载具"><button data-vehicle="jesko" aria-pressed="false">8 · Jesko · 295 / 435</button><button data-vehicle="aventador" aria-pressed="false">9 · Aventador · 310 / 450</button></div>
+    
+    <span class="setting-label">海况 · 随机渐变 · G</span>
+    <div class="filter-options" role="group" aria-label="海况"><button data-sea="auto" aria-pressed="true">随机</button><button data-sea="0" aria-pressed="false">渐入平静</button><button data-sea="1" aria-pressed="false">渐入巨浪</button></div>
+    <label class="grain-option rogue-option"><input id="rogueEnabled" type="checkbox" checked> 随机特大浪区</label>
+    <div class="lens-options"><button id="newRogue">补充前方大浪 · L</button></div>
+    <div class="lens-options"><button id="colossalWave">50 米巨浪 · J</button></div>
+    <span class="setting-label">色彩风格</span>
+    <div class="filter-options" role="group" aria-label="画面滤镜"><button data-filter="0" aria-pressed="true">自然</button><button data-filter="1" aria-pressed="false">电影</button><button data-filter="2" aria-pressed="false">冷调胶片</button></div>
+    <label class="setting-label" for="exposure">曝光 <output id="exposureValue">0.98</output></label>
+    <input id="exposure" type="range" aria-label="曝光" min="65" max="160" value="98">
+    <label class="setting-label" for="clarity">近水清透度 <output id="clarityValue">65%</output></label>
+    <input id="clarity" type="range" aria-label="近水清透度" min="0" max="100" value="65">
+    <label class="setting-label" for="cameraMotion">镜头摇晃 <output id="cameraMotionValue">45%</output></label>
+    <input id="cameraMotion" type="range" aria-label="镜头摇晃强度，零为关闭" min="0" max="100" value="45">
+    <div class="lens-options"><button id="cameraNear">近景人物</button><button id="cameraWide">广角海景</button></div>
+    <div class="lens-options"><button id="cameraSide">侧面船体</button></div>
+    <label class="grain-option"><input id="grain" type="checkbox"> 轻微胶片颗粒</label>
+    <span class="setting-label">航行操作</span>
+    <section class="panel-actions" aria-label="航行操作"><div class="boost-control"><small id="vehicleName">2 · Sea-Doo</small><button id="boost" aria-label="统一加速">加速</button><div class="boost-readout"><meter id="boostMeter" min="0" max="1" value="1" aria-label="加速能量"></meter><output id="boostStatus">100%</output></div></div><button id="cruise" aria-pressed="false">巡航</button><button data-drive="drift" aria-label="按住漂移">漂移</button><button id="brake">停车</button><button id="resetBoat">复位</button><button id="menu">首页</button></section>
+    <p>清透度也控制水下可见度，深海仍保留吸收。<br>Space 水面漂移 · 水下快速上浮<br>F11 全屏 · 锁定并隐藏鼠标，无边界环顾<br>Alt 释放 / 恢复 · Esc 释放 · 窗口内拖动<br>若未锁定，点击画面授权；受限浏览器请改用 Edge / Chrome。<br>滚轮调距离 · V 前后视角<br>摇晃随航速、转向和落水变化，0 为关闭。<br>50 米巨浪随机出现，也可按 J 渐入前方。</p>
+  </aside>
+  <main class="interface">
+    <section class="intro" id="intro" aria-label="开始界面">
+      <h1 class="intro-logo" aria-label="潮汐 TIDAL">
+        <svg class="intro-mark" viewBox="0 0 40 32" fill="none" aria-hidden="true"><path d="M2 10c6-8 11-8 18 0s12 8 18 0M2 22c6-8 11-8 18 0s12 8 18 0" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
+        <span class="intro-wordmark">TIDAL</span>
+      </h1>
+      <button id="start" class="start-button" aria-keyshortcuts="Space">START</button>
+    </section>
+    <section class="sailing-hud game-only" aria-label="航行状态" hidden>
+      <div><small>航速 <output id="flightStatus">贴水航行</output></small><strong><output id="speed">0.0</output><span> km/h</span></strong></div>
+      <span class="hud-line"></span>
+      <div><small>已航行</small><strong><output id="distance">0</output><span> m</span></strong></div>
+      <span class="hud-line"></span>
+      <div><small>航向</small><strong id="heading">N · 000°</strong></div>
+    </section>
+  </main>
+  <footer class="bottom interface">
+    <div class="coordinates game-only" hidden><span class="compass">N ↑</span><span id="position">0 / 0 m</span></div>
+  </footer>
+  <button id="restore" aria-label="显示界面" title="显示界面（H）">显示界面 <span>H</span></button>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="physics.js"></script>
+  <script src="game.bundle.js"></script>
+<a class="release-credits" href="THIRD_PARTY_NOTICES.md" target="_blank" rel="noopener" aria-label="素材许可 / Asset licences">©</a>
+</body>
+</html>
