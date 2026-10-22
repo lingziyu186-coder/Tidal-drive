@@ -16,7 +16,7 @@ Actual in-game screenshots, not pre-rendered trailers. They include third-party 
 
 [Open the private playtest](https://tidal-isle-ru.lzy0508ok.chatgpt.site)
 
-Owner-only: sign in with the authorized ChatGPT account. The lightweight playtest includes vehicles 1–4 only; the screenshots show features of the fuller private package. Forwarding the URL does not grant access. The [GitHub repository](https://github.com/lingziyu186-coder/Tidal-drive) is also private; repository and playtest permissions are separate.
+Owner-only: sign in with the authorized ChatGPT account. The lightweight playtest includes vehicles 1–4 only, with textures capped at 1024 pixels for faster loading; geometry and rigs are unchanged. The screenshots show features of the fuller private package, whose textures are not reduced. Forwarding the URL does not grant access. The [GitHub repository](https://github.com/lingziyu186-coder/Tidal-drive) is also private; repository and playtest permissions are separate.
 
 **No public release. The project-owned-material remix policy is still an unapproved draft, not an effective licence.**
 
@@ -65,7 +65,7 @@ Licence records rely on downloaded metadata, retained evidence and accessible up
 
 [打开私密试玩](https://tidal-isle-ru.lzy0508ok.chatgpt.site)
 
-仅所有者可访问，需要登录获授权的 ChatGPT 账号；轻量试玩仅含 1—4 号载具，展示图包含私人完整包的汽车及功能。转发链接不会授予权限。[项目仓库](https://github.com/lingziyu186-coder/Tidal-drive)目前为 Private，仓库与试玩站点的权限相互独立。
+仅所有者可访问，需要登录获授权的 ChatGPT 账号；轻量试玩仅含 1—4 号载具，纹理最大边为 1024 像素以加快加载，几何及骨架未改。展示图包含私人完整包的汽车及功能，完整包纹理未降质。转发链接不会授予权限。[项目仓库](https://github.com/lingziyu186-coder/Tidal-drive)目前为 Private，仓库与试玩站点的权限相互独立。
 
 **尚未公开发布。项目自有部分的二创条款待维护者确认；草案不是已生效的许可。**
 
