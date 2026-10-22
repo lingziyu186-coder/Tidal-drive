@@ -18,8 +18,8 @@
     "cat"
   ],
   "models": 8,
-  "fileCount": 32,
-  "totalBytesWithoutManifest": 331261737,
+  "fileCount": 34,
+  "totalBytesWithoutManifest": 342147677,
   "browserQA": false,
   "rightsChainIndependentlyVerified": false,
   "files": [
@@ -39,14 +39,24 @@
       "sha256": "8582A7841BABD1282B9A66AB9D636A7640DE52F334C5D7DAE016F906AAD9BB83"
     },
     {
-      "file": "docs/images/ocean-drive.jpg",
-      "bytes": 103293,
-      "sha256": "0A31305FDB3FD669FFFCBF4E2960CB7BF6647CD455A57E293D36184D986CF25C"
+      "file": "docs/images/breaking-wave.png",
+      "bytes": 3494816,
+      "sha256": "FE4B8BF0ED98F4F2F502DF866BA05B8AB9FDE4A5F48B2B0562AC59DC2019265A"
     },
     {
-      "file": "docs/images/wave-riding.jpg",
-      "bytes": 113494,
-      "sha256": "E2E1DD00D2536CA642562ED1EED02D4D0115720865394ADF026056E69BF41C1D"
+      "file": "docs/images/model-workshop.png",
+      "bytes": 2223827,
+      "sha256": "A946E38C6FBD3B87FD9FC0AEDC36D55C08A92BAF1AD4D55B43D52C689D89E1C8"
+    },
+    {
+      "file": "docs/images/nitro-boost.png",
+      "bytes": 2118853,
+      "sha256": "F0789BAAD921C2FA16E1C42E6528CCA0F9F7582561BCBA9540FB512E6DBBDCB5"
+    },
+    {
+      "file": "docs/images/ocean-sunset.png",
+      "bytes": 3264749,
+      "sha256": "84B1BF4C1C18C3E58F637C80F802F494EF48C8F32A1B5C94E7B39AD5D783C8E0"
     },
     {
       "file": "game.bundle.js",
@@ -155,8 +165,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 9779,
-      "sha256": "32E073EA85357EEC8C206417A6869FEEAE122E5DDB24DDD9FF05697D82483EEC"
+      "bytes": 10261,
+      "sha256": "B6697D6346E5A8746206AA780B0FE4577CAE9D0BCC4A714564DE945C3E28A3E8"
     },
     {
       "file": "REMIX_POLICY_DRAFT.md",

@@ -4,9 +4,11 @@ A browser-based ocean-driving experiment: boats, personal watercraft and cars, m
 
 [English](#tidal--ocean-driving) · [简体中文](#潮汐-tidal)
 
-| Ocean & free sailing | Cars & wave riding |
+| Sunset ocean driving | Nitro boost |
 | :---: | :---: |
-| ![TIDAL ocean cover and personal watercraft](docs/images/ocean-drive.jpg) | ![Xiaomi SU7 Ultra riding ocean waves](docs/images/wave-riding.jpg) |
+| ![Aventador on the ocean at sunset](docs/images/ocean-sunset.png) | ![Nitro exhaust and spray while crossing waves](docs/images/nitro-boost.png) |
+| **Breaking waves** | **GLB model workshop** |
+| ![Jesko approaching a breaking ocean wave](docs/images/breaking-wave.png) | ![Liquid glass GLB model workshop with DIY controls](docs/images/model-workshop.png) |
 
 Actual in-game screenshots, not pre-rendered trailers. They include third-party vehicles and characters: see [MODEL_CREDITS.md](MODEL_CREDITS.md). Their underlying assets are not independently relicensed by these screenshots.
 
@@ -14,7 +16,7 @@ Actual in-game screenshots, not pre-rendered trailers. They include third-party 
 
 [Open the private playtest](https://tidal-isle-ru.lzy0508ok.chatgpt.site)
 
-Owner-only: sign in with the authorized ChatGPT account. Forwarding the URL does not grant access. The [GitHub repository](https://github.com/lingziyu186-coder/Tidal-drive) is also private; repository and playtest permissions are separate.
+Owner-only: sign in with the authorized ChatGPT account. The lightweight playtest includes vehicles 1–4 only; the screenshots show features of the fuller private package. Forwarding the URL does not grant access. The [GitHub repository](https://github.com/lingziyu186-coder/Tidal-drive) is also private; repository and playtest permissions are separate.
 
 **No public release. The project-owned-material remix policy is still an unapproved draft, not an effective licence.**
 
@@ -45,7 +47,7 @@ Proposed attribution includes TIDAL, maintainer, actual repository URL, version/
 
 ## Checks and limitations
 
-Included: runtime files, shipped GLBs, two selected screenshots for this README, attribution/licence documents, the pending remix draft and `release-manifest.json` file hashes. Excluded: chats, unselected test captures, private rollback versions, platform configuration, Git history and dependency installations.
+Included: runtime files, shipped GLBs, four user-selected screenshots for this README, attribution/licence documents, the pending remix draft and `release-manifest.json` file hashes. Excluded: chats, unselected test captures, private rollback versions, platform configuration, Git history and dependency installations.
 
 Previously, 293 regression checks and 11 release-specific checks passed. CPU geometry/animation checks skip image decoding and are not GPU playtests. The screenshots come from a basic browser cover/vehicle/wave smoke test, not an exhaustive test of every vehicle, setting or GPU. Documentation has consistency/privacy-pattern checks. No guarantee of universal GPU compatibility or absolute security is made.
 
@@ -57,13 +59,13 @@ Licence records rely on downloaded metadata, retained evidence and accessible up
 
 海面驾驶与冲浪实验：木船、摩托艇与汽车，支持巨浪、飞跃、潜水、氮气和本地 GLB 模型调试。
 
-上方两列为海面自由航行、汽车冲浪的实机展示图，不是预渲染宣传图。截图含第三方载具与人物，署名及许可见 [MODEL_CREDITS.md](MODEL_CREDITS.md)，截图不能脱离这些权利单独改授许可。
+上方 2×2 表格为用户提供的四张实机展示图：夕阳海面、氮气冲浪、翻卷海浪和 GLB 模型调试台，不是预渲染宣传图。截图含第三方载具与人物，署名及许可见 [MODEL_CREDITS.md](MODEL_CREDITS.md)，截图不能脱离这些权利单独改授许可。
 
 ## 私密试玩
 
 [打开私密试玩](https://tidal-isle-ru.lzy0508ok.chatgpt.site)
 
-仅所有者可访问，需要登录获授权的 ChatGPT 账号；转发链接不会授予权限。[项目仓库](https://github.com/lingziyu186-coder/Tidal-drive)目前为 Private，仓库与试玩站点的权限相互独立。
+仅所有者可访问，需要登录获授权的 ChatGPT 账号；轻量试玩仅含 1—4 号载具，展示图包含私人完整包的汽车及功能。转发链接不会授予权限。[项目仓库](https://github.com/lingziyu186-coder/Tidal-drive)目前为 Private，仓库与试玩站点的权限相互独立。
 
 **尚未公开发布。项目自有部分的二创条款待维护者确认；草案不是已生效的许可。**
 
@@ -94,7 +96,7 @@ W/S 前后、A/D 转向、E/Shift 氮气、Space 水面漂移/水下上浮、C �
 
 ## 文件与检查边界
 
-包含运行文件、实际 GLB、两张精选实机图、来源/许可文档、待确认草案和 `release-manifest.json` 哈希清单；不含聊天、其他测试截图、私人回退、平台配置、Git 历史或依赖安装目录。
+包含运行文件、实际 GLB、四张用户精选实机图、来源/许可文档、待确认草案和 `release-manifest.json` 哈希清单；不含聊天、其他测试截图、私人回退、平台配置、Git 历史或依赖安装目录。
 
 此前 293 项回归与 11 项发布专项检查通过。CPU 几何/动作检查跳过纹理解码，不是 GPU 试玩。展示图来自浏览器封面、换车与海浪的简单检查，不等于全部载具、设置、显卡已完整验收。另有文档一致性及隐私模式检查，不保证显卡零问题或绝对无安全漏洞。
 
