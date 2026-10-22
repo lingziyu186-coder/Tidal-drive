@@ -18,8 +18,8 @@
     "cat"
   ],
   "models": 8,
-  "fileCount": 30,
-  "totalBytesWithoutManifest": 331044961,
+  "fileCount": 32,
+  "totalBytesWithoutManifest": 331261737,
   "browserQA": false,
   "rightsChainIndependentlyVerified": false,
   "files": [
@@ -37,6 +37,16 @@
       "file": "CREDITS.md",
       "bytes": 17469,
       "sha256": "8582A7841BABD1282B9A66AB9D636A7640DE52F334C5D7DAE016F906AAD9BB83"
+    },
+    {
+      "file": "docs/images/ocean-drive.jpg",
+      "bytes": 103293,
+      "sha256": "0A31305FDB3FD669FFFCBF4E2960CB7BF6647CD455A57E293D36184D986CF25C"
+    },
+    {
+      "file": "docs/images/wave-riding.jpg",
+      "bytes": 113494,
+      "sha256": "E2E1DD00D2536CA642562ED1EED02D4D0115720865394ADF026056E69BF41C1D"
     },
     {
       "file": "game.bundle.js",
@@ -145,8 +155,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 9790,
-      "sha256": "91ED5BE8755D6F4C4B3F1799D0DA27DDB88D9CD702EF13937A286D35D126D476"
+      "bytes": 9779,
+      "sha256": "32E073EA85357EEC8C206417A6869FEEAE122E5DDB24DDD9FF05697D82483EEC"
     },
     {
       "file": "REMIX_POLICY_DRAFT.md",
@@ -169,7 +179,7 @@
       "sha256": "78E04BDEAFA22B808A0618F6056656A5B0907F6F7AB5B2BC7A33AB3BF9840C68"
     }
   ],
-  "documentationDate": "2026-10-21",
+  "documentationDate": "2026-10-22",
   "repositoryUrl": "https://github.com/lingziyu186-coder/Tidal-drive",
   "githubAccount": "lingziyu186-coder",
   "remixPolicyStatus": "DRAFT_AWAITING_OWNER_APPROVAL",
