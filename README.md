@@ -12,17 +12,17 @@ A browser-based ocean-driving experiment: boats, personal watercraft and cars, m
 
 Actual in-game screenshots, not pre-rendered trailers. They include third-party vehicles and characters: see [MODEL_CREDITS.md](MODEL_CREDITS.md). Their underlying assets are not independently relicensed by these screenshots.
 
-## Online playtest — limited demo
+## Online playtest — temporarily unavailable
 
-[Play the lightweight demo](https://tidal-isle-ru.lzy0508ok.chatgpt.site)
+The playtest link has been withdrawn: a Cloudflare hosting block still prevents access after public access was enabled. The site has been returned to owner-private access. The game and download package have not been removed.
 
 **This is a reduced demo, not the full downloadable game.** It includes vehicles 1–4 only (rowboat, Sea-Doo, Kawasaki and Assault Boat); built-in cars shown in the screenshots are not included. Textures are capped at 1024 pixels for faster loading; geometry and rigs are unchanged. Rendering-resolution settings do not restore the original model-texture detail.
 
-The playtest is intended for direct browser access without a ChatGPT account. Its hosting permission is separate from the [GitHub repository](https://github.com/lingziyu186-coder/Tidal-drive), which remains **Private**. A hosting/Cloudflare block is an access failure, not an instruction to open ChatGPT to play.
+The intended playtest flow is direct browser access without a ChatGPT account, but it is **not currently verified as working**. The [GitHub repository](https://github.com/lingziyu186-coder/Tidal-drive) remains **Private**: only invited users can see this README or download the fuller package. No replacement public host is configured.
 
 [Download the fuller web package — repository access required](https://github.com/lingziyu186-coder/Tidal-drive/archive/refs/heads/main.zip). This contains the eight distributable vehicles listed below and original-resolution textures. It is not the entire private development project or every excluded model. Without repository permission, the private download may show a sign-in or not-found page.
 
-Only the 1–4 demo is authorized for public access; its runtime scripts and demo assets can be downloaded by visitors. The repository, history and other vehicle assets remain private. **The project-owned-material remix policy is still an unapproved draft, not an effective licence.**
+A future public 1–4 demo would expose its runtime scripts and demo assets to visitors, not the private repository, history or other vehicle assets. **The project-owned-material remix policy is still an unapproved draft, not an effective licence.**
 
 Maintainer: [lingziyu186-coder](https://github.com/lingziyu186-coder). English appears first, followed by Chinese. Original third-party licence texts remain authoritative for their respective material.
 
@@ -65,17 +65,17 @@ Licence records rely on downloaded metadata, retained evidence and accessible up
 
 上方 2×2 表格为用户提供的四张实机展示图：夕阳海面、氮气冲浪、翻卷海浪和 GLB 模型调试台，不是预渲染宣传图。截图含第三方载具与人物，署名及许可见 [MODEL_CREDITS.md](MODEL_CREDITS.md)，截图不能脱离这些权利单独改授许可。
 
-## 在线试玩——精简版
+## 在线试玩——暂不可用
 
-[打开轻量试玩网页](https://tidal-isle-ru.lzy0508ok.chatgpt.site)
+试玩链接已撤下：设为公开访问后仍被 Cloudflare 托管防护拦截，站点已恢复为仅所有者可访问。游戏和下载包均未删除。
 
 **这是精简试玩，不是完整下载版。** 仅含 1—4 号载具（木船、Sea-Doo、Kawasaki、Assault Boat），不含上方截图中的内置汽车。为加快加载，纹理最大边为 1024 像素，几何及骨架未改；提高画面渲染分辨率不会恢复模型原始贴图细节。
 
-试玩的目标是直接用浏览器访问，无需 ChatGPT 账号。[项目仓库](https://github.com/lingziyu186-coder/Tidal-drive)目前为 Private，仓库与试玩站点的权限相互独立。如果出现托管平台或 Cloudflare 拦截，属于访问故障，不表示必须打开 GPT 才能玩。
+试玩的目标是直接用浏览器访问，无需 ChatGPT 账号，但**目前未能验证正常游玩**。[项目仓库](https://github.com/lingziyu186-coder/Tidal-drive)目前为 Private：只有获邀用户能看到此 README 并下载较完整包。尚未配置替代的公开托管。
 
 [下载较完整的网页运行包——需要仓库权限](https://github.com/lingziyu186-coder/Tidal-drive/archive/refs/heads/main.zip)：包含下文列出的 8 款可分发载具及原分辨率纹理，不等于全部私人开发工程或所有已排除模型。没有仓库权限时，下载链接可能显示登录或找不到页面。
 
-仅授权公开 1—4 号试玩，其运行脚本和试玩素材可被访客下载；仓库、历史记录和其余载具仍私密。**项目自有部分的二创条款待维护者确认；草案不是已生效的许可。**
+将来公开 1—4 号试玩时，访客能获取其运行脚本和试玩素材，但不会开放私密仓库、历史记录或其余载具。**项目自有部分的二创条款待维护者确认；草案不是已生效的许可。**
 
 维护者：[lingziyu186-coder](https://github.com/lingziyu186-coder)。本文英文在前、中文在后；第三方原许可文本对相应素材有效，说明性译文不替代原文。
 

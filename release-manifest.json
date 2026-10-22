@@ -19,7 +19,7 @@
   ],
   "models": 8,
   "fileCount": 34,
-  "totalBytesWithoutManifest": 342154146,
+  "totalBytesWithoutManifest": 342154381,
   "browserQA": false,
   "rightsChainIndependentlyVerified": false,
   "files": [
@@ -165,8 +165,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 11938,
-      "sha256": "A654574A369927682A66D874E9831C05D5F6D4E82F2CCCDB7251202991DB9212"
+      "bytes": 12173,
+      "sha256": "86B0218A2865869723119D1595E4D5FF51694A6BA7C42596E60D49B5D268AF91"
     },
     {
       "file": "REMIX_POLICY_DRAFT.md",
@@ -195,5 +195,7 @@
   "remixPolicyStatus": "DRAFT_AWAITING_OWNER_APPROVAL",
   "publicationHold": true,
   "repositoryVisibility": "private",
-  "privateRepositoryUploadAuthorized": true
+  "privateRepositoryUploadAuthorized": true,
+  "onlinePlaytestStatus": "WITHDRAWN_PLATFORM_BLOCK",
+  "onlinePlaytestAccess": "owner-private"
 }
