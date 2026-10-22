@@ -19,7 +19,7 @@
   ],
   "models": 8,
   "fileCount": 34,
-  "totalBytesWithoutManifest": 342147897,
+  "totalBytesWithoutManifest": 342154146,
   "browserQA": false,
   "rightsChainIndependentlyVerified": false,
   "files": [
@@ -165,8 +165,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 10481,
-      "sha256": "8F1F238470158102CC79E5A835C6726A14BEA34847128C8A03BC4282438256F4"
+      "bytes": 11938,
+      "sha256": "A654574A369927682A66D874E9831C05D5F6D4E82F2CCCDB7251202991DB9212"
     },
     {
       "file": "REMIX_POLICY_DRAFT.md",
@@ -185,8 +185,8 @@
     },
     {
       "file": "THIRD_PARTY_NOTICES.md",
-      "bytes": 16434,
-      "sha256": "78E04BDEAFA22B808A0618F6056656A5B0907F6F7AB5B2BC7A33AB3BF9840C68"
+      "bytes": 21226,
+      "sha256": "B79474A2E3A963ED7C12B7BC449533DA8178BB09611ACD918575249C57B9199F"
     }
   ],
   "documentationDate": "2026-10-22",
