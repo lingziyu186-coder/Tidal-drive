@@ -18,8 +18,8 @@
     "cat"
   ],
   "models": 8,
-  "fileCount": 34,
-  "totalBytesWithoutManifest": 342154381,
+  "fileCount": 37,
+  "totalBytesWithoutManifest": 342160793,
   "browserQA": false,
   "rightsChainIndependentlyVerified": false,
   "files": [
@@ -69,6 +69,11 @@
       "sha256": "563D186A009271B4F64779627DE8924A7BF78E1A0EF6B1474C1405EC021D7F37"
     },
     {
+      "file": "LICENSE_SCOPE.md",
+      "bytes": 6019,
+      "sha256": "6FB998AA4925C589892517F9120C0B926DFE718A8EB83A390DCBDB607C3C0051"
+    },
+    {
       "file": "licenses/codrops-MIT.txt",
       "bytes": 1051,
       "sha256": "13328835D286FD8E2EA34E14773A3D88F6AA1925BD8F837D7FBBFC1BF1F5BB6A"
@@ -99,14 +104,14 @@
       "sha256": "BFE119EA4FD413F5F7CA3FCD63ADB0C4A073ED39DAA2FE7D3E6B769E21272601"
     },
     {
-      "file": "LICENSE_SCOPE.md",
-      "bytes": 6019,
-      "sha256": "6FB998AA4925C589892517F9120C0B926DFE718A8EB83A390DCBDB607C3C0051"
-    },
-    {
       "file": "liquid-glass.css",
       "bytes": 5718,
       "sha256": "992CC8C4C01DF0D3237BB44F41213E07AAA0E696A7D3141C10C756BFEA630E7E"
+    },
+    {
+      "file": "MODEL_CREDITS.md",
+      "bytes": 12784,
+      "sha256": "8A5BA28EBB49F1349DFBB52EC1E6F2DA1B209624FB8C1E04DE4CF6CED746E2EC"
     },
     {
       "file": "models/assault-boat_9.5-B6P74U3W.glb",
@@ -149,11 +154,6 @@
       "sha256": "1ED55698C8ECA483A9A2E3EDED0F17FF16420F489AA99F1CBBC3BAD8181489DC"
     },
     {
-      "file": "MODEL_CREDITS.md",
-      "bytes": 12784,
-      "sha256": "8A5BA28EBB49F1349DFBB52EC1E6F2DA1B209624FB8C1E04DE4CF6CED746E2EC"
-    },
-    {
       "file": "physics.js",
       "bytes": 6722,
       "sha256": "D804BEE807BE307060389355ACA65C8BCF56600DA2052B671FB2007FFFB8F4A0"
@@ -165,8 +165,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 12173,
-      "sha256": "86B0218A2865869723119D1595E4D5FF51694A6BA7C42596E60D49B5D268AF91"
+      "bytes": 11531,
+      "sha256": "B5DF28ECDC012263D1F3C6868C2D9DF18804063C9382BB30D44ED3D7F1296795"
     },
     {
       "file": "REMIX_POLICY_DRAFT.md",
@@ -179,6 +179,21 @@
       "sha256": "A389F2A04BE7583C9A1E6E0E77E33F3DC39039B54C2D0E3F7C0FE0771802DA01"
     },
     {
+      "file": "START-HERE.txt",
+      "bytes": 982,
+      "sha256": "96107C5E64A2368065479E5DF8759A6D89451257F4A5626ED2F0A5C7DD4DBEB1"
+    },
+    {
+      "file": "START-TIDAL.cmd",
+      "bytes": 209,
+      "sha256": "C9F822C0D8198F6C411E2CB20C4CC4A6F765F4EB1D72FBF23C9CA69040DE0935"
+    },
+    {
+      "file": "Start-Tidal.ps1",
+      "bytes": 5863,
+      "sha256": "F476A1577467140C6F9BD018329F8370A5C8972B78647245898EC29A20E8FF5E"
+    },
+    {
       "file": "style.css",
       "bytes": 9179,
       "sha256": "556FFABFE9B917B1FC23D53721AFFBD0E8D5523705CEE903FBC5DA13B599B92B"
@@ -189,13 +204,14 @@
       "sha256": "B79474A2E3A963ED7C12B7BC449533DA8178BB09611ACD918575249C57B9199F"
     }
   ],
-  "documentationDate": "2026-10-22",
+  "documentationDate": "2026-10-23",
   "repositoryUrl": "https://github.com/lingziyu186-coder/Tidal-drive",
   "githubAccount": "lingziyu186-coder",
   "remixPolicyStatus": "DRAFT_AWAITING_OWNER_APPROVAL",
   "publicationHold": true,
   "repositoryVisibility": "private",
   "privateRepositoryUploadAuthorized": true,
-  "onlinePlaytestStatus": "WITHDRAWN_PLATFORM_BLOCK",
-  "onlinePlaytestAccess": "owner-private"
+  "distribution": "download-only",
+  "windowsLauncher": "START-TIDAL.cmd",
+  "launcherValidation": "local-http-assets-concurrency-and-path-checks-passed"
 }

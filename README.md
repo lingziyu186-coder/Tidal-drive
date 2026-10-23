@@ -12,23 +12,23 @@ A browser-based ocean-driving experiment: boats, personal watercraft and cars, m
 
 Actual in-game screenshots, not pre-rendered trailers. They include third-party vehicles and characters: see [MODEL_CREDITS.md](MODEL_CREDITS.md). Their underlying assets are not independently relicensed by these screenshots.
 
-## Online playtest — temporarily unavailable
+## Download and play (Windows 10/11)
 
-The playtest link has been withdrawn: a Cloudflare hosting block still prevents access after public access was enabled. The site has been returned to owner-private access. The game and download package have not been removed.
+[Download ZIP — repository access required](https://github.com/lingziyu186-coder/Tidal-drive/archive/refs/heads/main.zip)
 
-**This is a reduced demo, not the full downloadable game.** It includes vehicles 1–4 only (rowboat, Sea-Doo, Kawasaki and Assault Boat); built-in cars shown in the screenshots are not included. Textures are capped at 1024 pixels for faster loading; geometry and rigs are unchanged. Rendering-resolution settings do not restore the original model-texture detail.
+1. Download the ZIP and choose **Extract All**. Open the extracted `Tidal-drive-main` folder.
+2. Double-click **START-TIDAL.cmd**. Your default browser opens the game automatically.
+3. Press **Space** on the cover to start.
 
-The intended playtest flow is direct browser access without a ChatGPT account, but it is **not currently verified as working**. The [GitHub repository](https://github.com/lingziyu186-coder/Tidal-drive) remains **Private**: only invited users can see this README or download the fuller package. No replacement public host is configured.
+Keep the TIDAL command window open while playing; close it when finished. No Python, Node.js, terminal commands or administrator rights are required. Windows PowerShell, included with Windows 10/11, starts a loopback-only server. Files are served from the extracted game folder. After downloading and extracting, the packaged game resources can load locally without GitHub or ChatGPT sign-in.
 
-[Download the fuller web package — repository access required](https://github.com/lingziyu186-coder/Tidal-drive/archive/refs/heads/main.zip). This contains the eight distributable vehicles listed below and original-resolution textures. It is not the entire private development project or every excluded model. Without repository permission, the private download may show a sign-in or not-found page.
-
-A future public 1–4 demo would expose its runtime scripts and demo assets to visitors, not the private repository, history or other vehicle assets. **The project-owned-material remix policy is still an unapproved draft, not an effective licence.**
+The repository remains private; GitHub sign-in and repository access are needed to download. If Windows or an organisation's security policy blocks scripts, do not disable system protection; contact the maintainer. Use a current browser with WebGL support. Launch from the fully extracted folder, not inside the ZIP. Other operating systems can serve this folder with their preferred static HTTP server.
 
 Maintainer: [lingziyu186-coder](https://github.com/lingziyu186-coder). English appears first, followed by Chinese. Original third-party licence texts remain authoritative for their respective material.
 
 ## Running and controls
 
-Serve `index.html` with its neighbouring CSS, JavaScript, `models/`, images and licence files over HTTP/HTTPS. This is a **runtime web package, not a complete reproducible source project**, and not a `file:` double-click offline build. `game.bundle.js` combines project and third-party code; a single project licence cannot cover the whole bundle. An editable source release would need a separate cleaned source package, not the private development directory.
+The Windows launcher serves `index.html` and its neighbouring CSS, JavaScript, models, images and licence files over local HTTP. This is a **runtime web package, not a complete reproducible source project**, and not a `file:` double-click offline build. `game.bundle.js` combines project and third-party code; a single project licence cannot cover the whole bundle. An editable source release would need a separate cleaned source package, not the private development directory.
 
 Vehicle keys: 1 wooden rowboat, 2 Sea-Doo, 3 Kawasaki, 4 Assault Boat, 5 Mercedes, 6 Xiaomi, 8 Jesko, 9 Aventador. Mazda (7), LEGO (0), the cat (minus) and its motions are excluded because a verifiable redistribution licence for their appearance was not established. Keys are not renumbered.
 
@@ -65,23 +65,23 @@ Licence records rely on downloaded metadata, retained evidence and accessible up
 
 上方 2×2 表格为用户提供的四张实机展示图：夕阳海面、氮气冲浪、翻卷海浪和 GLB 模型调试台，不是预渲染宣传图。截图含第三方载具与人物，署名及许可见 [MODEL_CREDITS.md](MODEL_CREDITS.md)，截图不能脱离这些权利单独改授许可。
 
-## 在线试玩——暂不可用
+## 下载即玩（Windows 10/11）
 
-试玩链接已撤下：设为公开访问后仍被 Cloudflare 托管防护拦截，站点已恢复为仅所有者可访问。游戏和下载包均未删除。
+[下载 ZIP——需要仓库访问权限](https://github.com/lingziyu186-coder/Tidal-drive/archive/refs/heads/main.zip)
 
-**这是精简试玩，不是完整下载版。** 仅含 1—4 号载具（木船、Sea-Doo、Kawasaki、Assault Boat），不含上方截图中的内置汽车。为加快加载，纹理最大边为 1024 像素，几何及骨架未改；提高画面渲染分辨率不会恢复模型原始贴图细节。
+1. 下载 ZIP，右键选择**全部解压缩**，打开解压后的 `Tidal-drive-main` 文件夹。
+2. 双击 **START-TIDAL.cmd**，默认浏览器会自动打开游戏。
+3. 在封面按**空格键**开始。
 
-试玩的目标是直接用浏览器访问，无需 ChatGPT 账号，但**目前未能验证正常游玩**。[项目仓库](https://github.com/lingziyu186-coder/Tidal-drive)目前为 Private：只有获邀用户能看到此 README 并下载较完整包。尚未配置替代的公开托管。
+游玩时保留 TIDAL 启动窗口，结束后关闭该窗口即可。无需安装 Python、Node.js，无需输入命令或使用管理员权限。启动器使用 Windows 10/11 自带的 PowerShell，只在本机提供游戏文件。下载并完整解压后，随包资源可从本机加载，启动游戏无需登录 GitHub 或 ChatGPT。
 
-[下载较完整的网页运行包——需要仓库权限](https://github.com/lingziyu186-coder/Tidal-drive/archive/refs/heads/main.zip)：包含下文列出的 8 款可分发载具及原分辨率纹理，不等于全部私人开发工程或所有已排除模型。没有仓库权限时，下载链接可能显示登录或找不到页面。
-
-将来公开 1—4 号试玩时，访客能获取其运行脚本和试玩素材，但不会开放私密仓库、历史记录或其余载具。**项目自有部分的二创条款待维护者确认；草案不是已生效的许可。**
+仓库继续保持私密：下载时需要 GitHub 登录和仓库权限。若系统或单位安全策略阻止脚本，请联系维护者，不要关闭系统安全防护。使用支持 WebGL 的现代浏览器；请勿在 ZIP 内启动。其他操作系统可自行使用静态 HTTP 服务运行本目录。
 
 维护者：[lingziyu186-coder](https://github.com/lingziyu186-coder)。本文英文在前、中文在后；第三方原许可文本对相应素材有效，说明性译文不替代原文。
 
 ## 运行与操作
 
-通过 HTTP/HTTPS 静态服务运行 `index.html`，保留相邻 CSS、JS、`models/`、展示图片及许可文件。这是**网页运行包，不是完整的可复现源码工程**，也不是可用 `file:` 双击的离线包。`game.bundle.js` 混合项目和第三方代码，不能给整份脚本统一套项目许可。开放可编辑源码需另备干净源码包，不能直接上传私人开发目录。
+Windows 双击启动器会通过本机 HTTP 服务运行 `index.html`；请保留相邻 CSS、JS、`models/`、展示图片及许可文件。这是**网页运行包，不是完整的可复现源码工程**，也不是可用 `file:` 双击的离线包。`game.bundle.js` 混合项目和第三方代码，不能给整份脚本统一套项目许可。开放可编辑源码需另备干净源码包，不能直接上传私人开发目录。
 
 载具按键：1 木船、2 Sea-Doo、3 Kawasaki、4 Assault Boat、5 Mercedes、6 小米、8 Jesko、9 Aventador。7 号 Mazda、0 号 LEGO、减号猫咪及动作因缺少可核实的外观再分发许可未随包，编号不重排。
 
