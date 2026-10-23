@@ -54,7 +54,7 @@ If the launcher closes immediately, confirm that you extracted the entire ZIP an
 - [MODEL_CREDITS.md](MODEL_CREDITS.md): creators, sources, licences, changes and hashes for the eight shipped GLBs; the rowboat is procedural.
 - [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), [RDEV_GLASS_NOTICE.md](RDEV_GLASS_NOTICE.md) and [licenses/](licenses/): retained third-party notices and licence texts.
 - [LICENSE_SCOPE.md](LICENSE_SCOPE.md): terms for each part; the mixed `game.bundle.js` is not uniformly MIT-licensed.
-- [REMIX_POLICY_DRAFT.md](REMIX_POLICY_DRAFT.md): proposed credited, noncommercial remix terms for material the maintainer may license. **The draft is not effective** and does not restrict third-party MIT, CC BY or CC0 permissions.
+- [LICENSE.md](LICENSE.md): **TIDAL Attribution–NonCommercial Licence 1.0**, effective 2026-10-23, for the project-owned portions it identifies. Third-party MIT, CC BY and CC0 permissions are not restricted.
 
 Vehicles `6`, `8` and `9` are recorded under CC BY-NC-SA 4.0: see their notices for attribution, changes, noncommercial use and ShareAlike. Free of charge does not automatically mean noncommercial. Original third-party licence texts govern their material.
 
@@ -120,7 +120,7 @@ Asset records do not independently verify uploader, brand, livery, design or lik
 - [MODEL_CREDITS.md](MODEL_CREDITS.md)：随包 8 个 GLB 的作者、来源、许可、改动与哈希；木船为程序化几何。
 - [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)、[RDEV_GLASS_NOTICE.md](RDEV_GLASS_NOTICE.md) 和 [licenses/](licenses/)：保留的第三方声明与许可正文。
 - [LICENSE_SCOPE.md](LICENSE_SCOPE.md)：各部分适用条款；混合代码 `game.bundle.js` 不是统一 MIT 许可。
-- [REMIX_POLICY_DRAFT.md](REMIX_POLICY_DRAFT.md)：针对维护者有权授权材料的署名、非商业二创候选条款。**草案尚未生效**，不会收紧第三方 MIT、CC BY 或 CC0 权限。
+- [LICENSE.md](LICENSE.md)：**TIDAL 署名·非商业许可 1.0**，自 2026-10-23 生效，适用于其中列明的项目自有部分；不会收紧第三方 MIT、CC BY 或 CC0 权限。
 
 载具 `6`、`8`、`9` 的许可记录为 CC BY-NC-SA 4.0，署名、改动、非商业和同许可要求见相应声明。免费不自动等于非商业。第三方原许可正文适用于对应材料。
 

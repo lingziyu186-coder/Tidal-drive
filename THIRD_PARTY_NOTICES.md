@@ -4,9 +4,9 @@ This HTTP/HTTPS runtime package contains vehicles 1, 2, 3, 4, 5, 6, 8 and 9, plu
 
 本包仅含 1、2、3、4、5、6、8、9 号载具与人物；1 号木船为程序化几何，其余七款载具与人物共 8 个 GLB。Mazda、LEGO、行走猫及猫咪动作未随包。实际文件、作者、许可记录、哈希和改动见 MODEL_CREDITS.md。
 
-Each third-party component retains its own licence. CC BY-NC-SA 4.0 applies to the corresponding 6, 8 and 9 model adaptations, not to unrelated MIT, CC BY or CC0 materials. The project remix policy remains a separate unapproved draft; no blanket relicence is asserted. Embedded model metadata is evidence of a recorded licence, not an independent guarantee of the uploader's rights to brands, livery or designs. No official endorsement is implied.
+Each third-party component retains its own licence. CC BY-NC-SA 4.0 applies to the corresponding 6, 8 and 9 model adaptations, not to unrelated MIT, CC BY or CC0 materials. The project-owned portions identified in LICENSE.md use the separate TIDAL Attribution–NonCommercial Licence 1.0; no blanket relicence is asserted. Embedded model metadata is evidence of a recorded licence, not an independent guarantee of the uploader's rights to brands, livery or designs. No official endorsement is implied.
 
-第三方素材分别遵守原许可；6、8、9 号模型改编保留 CC BY-NC-SA 4.0，不限制无关的 MIT、CC BY 或 CC0 材料。项目二创规则仍是独立的待确认草案，不是整体重新授权。模型内嵌记录不等于完整权利链或品牌、涂装、外观权利已核实，不暗示官方背书。
+第三方素材分别遵守原许可；6、8、9 号模型改编保留 CC BY-NC-SA 4.0，不限制无关的 MIT、CC BY 或 CC0 材料。LICENSE.md 列明的项目自有部分适用独立的《TIDAL 署名·非商业许可 1.0》，不是整体重新授权。模型内嵌记录不等于完整权利链或品牌、涂装、外观权利已核实，不暗示官方背书。
 
 Complete code notices are retained below and in licenses/three-MIT.txt, licenses/crest-MIT.txt, licenses/codrops-MIT.txt, licenses/kwlck-MIT.txt, licenses/rdev-MIT.txt and licenses/shuding-MIT.txt; the glass adaptation is also documented in RDEV_GLASS_NOTICE.md. Historical sections explicitly marked not shipped are retained for provenance only, not as a current dependency or distribution claim.
 

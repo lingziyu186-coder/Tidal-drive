@@ -82,7 +82,7 @@ Sea-Doo 和 Assault Boat 的下载副本来自 bob6664569/open-water 的已记�
 
 许可正文：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)、[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)、[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)。使用者需要保留实际适用的作者、来源和改动说明，不能用本项目名覆盖原作者。
 
-未随包：Mazda、LEGO、行走猫和猫咪动作，以及其他开发候选模型。项目署名草案不能为这些未授权外观补授权。
+未随包：Mazda、LEGO、行走猫和猫咪动作，以及其他开发候选模型。项目自有许可不能为这些未授权外观补授权。
 
 ---
 
@@ -170,4 +170,4 @@ Sea-Doo and Assault Boat copies came from the recorded pinned bob6664569/open-wa
 
 Full terms: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Retain applicable creator, source and change information; do not replace original authors with this project name.
 
-Not shipped: Mazda, LEGO, the walking cat and cat motions, and other development candidates. The project attribution-policy draft cannot provide missing rights to their appearances. Original licence records remain unchanged; this English explanation corresponds to the Chinese portion above.
+Not shipped: Mazda, LEGO, the walking cat and cat motions, and other development candidates. The project-owned-material licence cannot provide missing rights to their appearances. Original licence records remain unchanged; this English explanation corresponds to the Chinese portion above.

@@ -50,7 +50,7 @@
 
 请同时注明 TIDAL 项目来源与实际使用的上游作者；只写“感谢开源社区”或“灵感来自某库”不能替代适用许可要求的版权/许可文本。不要删掉上游 MIT 声明；使用 CC BY 资产时保留作者、作品链接、许可和改动信息；使用 CC BY-NC-SA 的模型改编部分时还须遵守其非商业、同许可与无额外限制要求。
 
-项目自有部分的候选二创规则在 [REMIX_POLICY_DRAFT.md](REMIX_POLICY_DRAFT.md)，尚待维护者确认，不会覆盖或收紧上游原有权利。具体许可全文优先于本摘要。本记录可能有遗漏，发现来源或署名问题应补证修订，不以“已致谢”代替授权。
+项目自有部分适用 [LICENSE.md](LICENSE.md) 中的《TIDAL 署名·非商业许可 1.0》，自 2026-10-23 生效，不覆盖或收紧上游原有权利。具体许可全文优先于本摘要。本记录可能有遗漏，发现来源或署名问题应补证修订，不以“已致谢”代替授权。
 
 ---
 
@@ -106,4 +106,4 @@ Procedural rowboat geometry, game physics, wave lifetimes, driving interaction, 
 
 Credit both TIDAL and the upstream creators actually used. A generic “thanks to open source” or “inspired by” statement does not replace required copyright and licence notices. Preserve MIT notices; provide required creator, work, licence and change information for CC BY assets; satisfy noncommercial, ShareAlike and no-additional-restrictions requirements for corresponding CC BY-NC-SA adaptations.
 
-[REMIX_POLICY_DRAFT.md](REMIX_POLICY_DRAFT.md) remains an unapproved proposal for project-owned portions, not an override of upstream rights. Actual licence texts take precedence over this summary. Attribution is not a substitute for permission; omissions or provenance errors require evidence and correction.
+The identified project-owned portions use the TIDAL Attribution–NonCommercial Licence 1.0 in [LICENSE.md](LICENSE.md), effective 2026-10-23, without overriding upstream rights. Actual licence texts take precedence over this summary. Attribution is not a substitute for permission; omissions or provenance errors require evidence and correction.

@@ -19,7 +19,7 @@
   ],
   "models": 8,
   "fileCount": 37,
-  "totalBytesWithoutManifest": 342158942,
+  "totalBytesWithoutManifest": 342159509,
   "browserQA": false,
   "rightsChainIndependentlyVerified": false,
   "files": [
@@ -29,14 +29,59 @@
       "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
     },
     {
+      "file": "CREDITS.md",
+      "bytes": 17495,
+      "sha256": "437594ACF692594F51422067F7D7C44BCE97BF7C17981300C3FC52842B60825C"
+    },
+    {
+      "file": "LICENSE.md",
+      "bytes": 11815,
+      "sha256": "65E194E81279BC01E306DC813A161EEC7082909AD5204770402F995604BFDD8D"
+    },
+    {
+      "file": "LICENSE_SCOPE.md",
+      "bytes": 5966,
+      "sha256": "ECA06F9B9A5F2D7557F00443EC30DA45D654502707ADC7B0D0A2F2CA8C2EB586"
+    },
+    {
+      "file": "MODEL_CREDITS.md",
+      "bytes": 12782,
+      "sha256": "780BD4E7651021A3A6A2AB6AD7A61A465290DE2CD14BB86CE1ED10EE67F123A7"
+    },
+    {
+      "file": "RDEV_GLASS_NOTICE.md",
+      "bytes": 1929,
+      "sha256": "B699A4012912220B5BC1B46AC051CB9C3228EDE8907EB782C4773B23A29DB8C8"
+    },
+    {
+      "file": "README.md",
+      "bytes": 9940,
+      "sha256": "01962B1038DC7C9D5B1812523E5C3CB0BB4F6D42971D68FA20BFA6FE28BD27CF"
+    },
+    {
+      "file": "START-HERE.txt",
+      "bytes": 982,
+      "sha256": "96107C5E64A2368065479E5DF8759A6D89451257F4A5626ED2F0A5C7DD4DBEB1"
+    },
+    {
+      "file": "START-TIDAL.cmd",
+      "bytes": 209,
+      "sha256": "C9F822C0D8198F6C411E2CB20C4CC4A6F765F4EB1D72FBF23C9CA69040DE0935"
+    },
+    {
+      "file": "Start-Tidal.ps1",
+      "bytes": 5863,
+      "sha256": "F476A1577467140C6F9BD018329F8370A5C8972B78647245898EC29A20E8FF5E"
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.md",
+      "bytes": 21324,
+      "sha256": "651A3CB02A59D070A87C18F897B77730FF4BB33D45DC024915817FA9225CE308"
+    },
+    {
       "file": "cinema.css",
       "bytes": 19693,
       "sha256": "6DF544D5EF17249FC3FC174AAFF0CC3B3A370B33A97E56DB21B98965BEA7AEC5"
-    },
-    {
-      "file": "CREDITS.md",
-      "bytes": 17455,
-      "sha256": "3B9264DBD7A1AB34F2ED0E1311E946AA55076B91C602772E0AAF02D43782EEBB"
     },
     {
       "file": "docs/images/breaking-wave.png",
@@ -67,11 +112,6 @@
       "file": "index.html",
       "bytes": 15839,
       "sha256": "563D186A009271B4F64779627DE8924A7BF78E1A0EF6B1474C1405EC021D7F37"
-    },
-    {
-      "file": "LICENSE_SCOPE.md",
-      "bytes": 6019,
-      "sha256": "6FB998AA4925C589892517F9120C0B926DFE718A8EB83A390DCBDB607C3C0051"
     },
     {
       "file": "licenses/codrops-MIT.txt",
@@ -107,11 +147,6 @@
       "file": "liquid-glass.css",
       "bytes": 5718,
       "sha256": "992CC8C4C01DF0D3237BB44F41213E07AAA0E696A7D3141C10C756BFEA630E7E"
-    },
-    {
-      "file": "MODEL_CREDITS.md",
-      "bytes": 12784,
-      "sha256": "8A5BA28EBB49F1349DFBB52EC1E6F2DA1B209624FB8C1E04DE4CF6CED746E2EC"
     },
     {
       "file": "models/assault-boat_9.5-B6P74U3W.glb",
@@ -159,57 +194,24 @@
       "sha256": "D804BEE807BE307060389355ACA65C8BCF56600DA2052B671FB2007FFFB8F4A0"
     },
     {
-      "file": "RDEV_GLASS_NOTICE.md",
-      "bytes": 1929,
-      "sha256": "B699A4012912220B5BC1B46AC051CB9C3228EDE8907EB782C4773B23A29DB8C8"
-    },
-    {
-      "file": "README.md",
-      "bytes": 9975,
-      "sha256": "321C1223D24B7E0AD43031006EDF7F471E8EBF59FB0E8FC838F9E847DD6CAFBF"
-    },
-    {
-      "file": "REMIX_POLICY_DRAFT.md",
-      "bytes": 11296,
-      "sha256": "0E1F979F41C13A347D4632730B60CAF5FC36048D44B472E848E1C3C0FCFCD933"
-    },
-    {
       "file": "sailing.css",
       "bytes": 4706,
       "sha256": "A389F2A04BE7583C9A1E6E0E77E33F3DC39039B54C2D0E3F7C0FE0771802DA01"
     },
     {
-      "file": "START-HERE.txt",
-      "bytes": 982,
-      "sha256": "96107C5E64A2368065479E5DF8759A6D89451257F4A5626ED2F0A5C7DD4DBEB1"
-    },
-    {
-      "file": "START-TIDAL.cmd",
-      "bytes": 209,
-      "sha256": "C9F822C0D8198F6C411E2CB20C4CC4A6F765F4EB1D72FBF23C9CA69040DE0935"
-    },
-    {
-      "file": "Start-Tidal.ps1",
-      "bytes": 5863,
-      "sha256": "F476A1577467140C6F9BD018329F8370A5C8972B78647245898EC29A20E8FF5E"
-    },
-    {
       "file": "style.css",
       "bytes": 9179,
       "sha256": "556FFABFE9B917B1FC23D53721AFFBD0E8D5523705CEE903FBC5DA13B599B92B"
-    },
-    {
-      "file": "THIRD_PARTY_NOTICES.md",
-      "bytes": 21226,
-      "sha256": "B79474A2E3A963ED7C12B7BC449533DA8178BB09611ACD918575249C57B9199F"
     }
   ],
   "documentationDate": "2026-10-23",
   "repositoryUrl": "https://github.com/lingziyu186-coder/Tidal-drive",
   "githubAccount": "lingziyu186-coder",
-  "remixPolicyStatus": "DRAFT_AWAITING_OWNER_APPROVAL",
-  "publicationHold": true,
+  "remixPolicyStatus": "APPROVED_PROJECT_OWNED_PORTIONS",
   "distribution": "download-only",
   "windowsLauncher": "START-TIDAL.cmd",
-  "launcherValidation": "local-http-assets-concurrency-and-path-checks-passed"
+  "launcherValidation": "local-http-assets-concurrency-and-path-checks-passed",
+  "projectLicenseFile": "LICENSE.md",
+  "projectLicenseVersion": "1.0",
+  "projectLicenseEffectiveDate": "2026-10-23"
 }
