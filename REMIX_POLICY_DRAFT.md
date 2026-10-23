@@ -2,7 +2,7 @@
 
 **状态：DRAFT / 未生效 / 不构成正式授权。** 这是按维护者“允许署名的非商业二创，具体条款先确认”的要求拟定的候选文本；不是现成标准开源许可证，不是律师审定文本。维护者确认并明确列出可授权部分后，才可另行形成正式许可。确认前不覆盖或影响第三方已生效许可。
 
-维护者：[lingziyu186-coder](https://github.com/lingziyu186-coder)。项目名：潮汐 TIDAL。项目仓库：[lingziyu186-coder/Tidal-drive](https://github.com/lingziyu186-coder/Tidal-drive)，当前为私人仓库。链接不自动授予仓库访问权。
+维护者：[lingziyu186-coder](https://github.com/lingziyu186-coder)。项目名：潮汐 TIDAL。项目仓库：[lingziyu186-coder/Tidal-drive](https://github.com/lingziyu186-coder/Tidal-drive)。
 
 ## 1. 适用边界
 
@@ -55,9 +55,9 @@
 3. 仓库链接已补齐；发布前仍需确定版本标识、联系渠道，并形成正式许可文件及生效版本。
 4. 决定是否另外准备可编辑源码工程；当前网页运行包不是完整源码发布。
 
-在上述确认前，**不要将本草案改名为 LICENSE、声称已经获得项目自有部分二创许可，或自动上传/公开。** 对已按其他有效许可取得的权利，本草案不作撤销或追溯修改。
+在上述确认前，**不要将本草案改名为 LICENSE 或声称已取得项目自有部分的二创许可。** 对已按其他有效许可取得的权利，本草案不作撤销或追溯修改。
 
-用户另行允许将项目准备文件上传至指定私人仓库，仅表示允许私人存储/备份，不表示本二创许可已获确认或允许公开发布。
+仓库可见性变更不使本草案生效；正式许可仍须另行确认。中英文表达同一候选条件，第三方原许可文本保持不变。
 
 ---
 
@@ -65,7 +65,7 @@
 
 **DRAFT / NOT EFFECTIVE / NOT A LICENCE GRANT.** This proposal follows the maintainer's request to allow credited, noncommercial remixing after reviewing the actual terms. It is not a standard open-source licence or lawyer-reviewed legal instrument. Approval and identification of material the maintainer is entitled to license are required before issuing effective project terms. Existing third-party licences are not overridden.
 
-Maintainer: [lingziyu186-coder](https://github.com/lingziyu186-coder). Project: TIDAL. Repository: [lingziyu186-coder/Tidal-drive](https://github.com/lingziyu186-coder/Tidal-drive), currently private. The URL does not grant access.
+Maintainer: [lingziyu186-coder](https://github.com/lingziyu186-coder). Project: TIDAL. Repository: [lingziyu186-coder/Tidal-drive](https://github.com/lingziyu186-coder/Tidal-drive).
 
 ## 1. Proposed scope
 
@@ -118,6 +118,6 @@ To the extent allowed by applicable law, the software would be provided as-is wi
 3. The repository link is now known; still specify a release/version, contact route and effective licence before public distribution.
 4. Decide whether to provide a cleaned editable source project separately; this runtime package is not a complete source release.
 
-Before confirmation, **do not rename this draft to LICENSE, claim an effective project-owned remix permission, or automatically publish it**. Existing rights obtained under other effective licences are not revoked or changed retrospectively.
+Before confirmation, **do not rename this draft to LICENSE or claim an effective project-owned remix permission**. Existing rights obtained under other effective licences are not revoked or changed retrospectively.
 
-The user's separate approval to store the prepared project in the specified private repository authorises that upload/backup only. It does not approve this draft as an effective licence or authorise a public release. Chinese and English express the same proposed conditions; original third-party licence texts remain unchanged.
+Changing repository visibility does not make this draft effective; the licence still requires separate approval. Chinese and English express the same proposed conditions; original third-party licence texts remain unchanged.

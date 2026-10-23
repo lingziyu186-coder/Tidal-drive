@@ -1,6 +1,6 @@
 # 来源与借鉴说明
 
-维护记录：2026-10-21。项目维护者为 [lingziyu186-coder](https://github.com/lingziyu186-coder)；[项目私人仓库](https://github.com/lingziyu186-coder/Tidal-drive)。本文件说明使用事实，不是重新授权他人作品，也不宣称所有算法或美术完全原创。中文在前、英文在后，原始许可证文本保持不变。
+维护记录：2026-10-21。项目维护者为 [lingziyu186-coder](https://github.com/lingziyu186-coder)；[项目仓库](https://github.com/lingziyu186-coder/Tidal-drive)。本文件说明使用事实，不是重新授权他人作品，也不宣称所有算法或美术完全原创。中文在前、英文在后，原始许可证文本保持不变。
 
 “实际采用/改编”表示存在相应运行依赖、代码适配或随包素材；“下载来源”不表示复制该站点的应用代码；“研究参考”不表示把该仓库整体搬进项目。下方源码路径指开发工程内的对应文件，当前网页运行包中的代码已合并至 `game.bundle.js`。
 
@@ -56,7 +56,7 @@
 
 # Credits and provenance — English
 
-Recorded 2026-10-21. Maintainer: [lingziyu186-coder](https://github.com/lingziyu186-coder); [private project repository](https://github.com/lingziyu186-coder/Tidal-drive). This documents use and provenance; it does not relicense others' work or claim that every algorithm and artwork is original.
+Recorded 2026-10-21. Maintainer: [lingziyu186-coder](https://github.com/lingziyu186-coder); [project repository](https://github.com/lingziyu186-coder/Tidal-drive). This documents use and provenance; it does not relicense others' work or claim that every algorithm and artwork is original.
 
 “Used/adapted” means a runtime dependency, adapted implementation or shipped asset. A download source is not necessarily the source of application code. A research reference does not mean the whole repository was incorporated. Source paths below refer to the development project; runtime code is bundled into `game.bundle.js`.
 

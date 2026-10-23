@@ -19,7 +19,7 @@
   ],
   "models": 8,
   "fileCount": 37,
-  "totalBytesWithoutManifest": 342159465,
+  "totalBytesWithoutManifest": 342158942,
   "browserQA": false,
   "rightsChainIndependentlyVerified": false,
   "files": [
@@ -35,8 +35,8 @@
     },
     {
       "file": "CREDITS.md",
-      "bytes": 17469,
-      "sha256": "8582A7841BABD1282B9A66AB9D636A7640DE52F334C5D7DAE016F906AAD9BB83"
+      "bytes": 17455,
+      "sha256": "3B9264DBD7A1AB34F2ED0E1311E946AA55076B91C602772E0AAF02D43782EEBB"
     },
     {
       "file": "docs/images/breaking-wave.png",
@@ -165,13 +165,13 @@
     },
     {
       "file": "README.md",
-      "bytes": 10203,
-      "sha256": "9CC4CBD3C18902BC46C4784A25BDF189E73A64C39F89607B5A78671DD011917C"
+      "bytes": 9975,
+      "sha256": "321C1223D24B7E0AD43031006EDF7F471E8EBF59FB0E8FC838F9E847DD6CAFBF"
     },
     {
       "file": "REMIX_POLICY_DRAFT.md",
-      "bytes": 11577,
-      "sha256": "96925BBAC0BA450D3CFE5EB6D6442F7893D8D6F77C10C8B4DD284A686D59CDBF"
+      "bytes": 11296,
+      "sha256": "0E1F979F41C13A347D4632730B60CAF5FC36048D44B472E848E1C3C0FCFCD933"
     },
     {
       "file": "sailing.css",
@@ -209,8 +209,6 @@
   "githubAccount": "lingziyu186-coder",
   "remixPolicyStatus": "DRAFT_AWAITING_OWNER_APPROVAL",
   "publicationHold": true,
-  "repositoryVisibility": "private",
-  "privateRepositoryUploadAuthorized": true,
   "distribution": "download-only",
   "windowsLauncher": "START-TIDAL.cmd",
   "launcherValidation": "local-http-assets-concurrency-and-path-checks-passed"

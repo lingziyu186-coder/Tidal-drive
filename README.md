@@ -16,7 +16,7 @@ Maintainer: [lingziyu186-coder](https://github.com/lingziyu186-coder).
 
 ## Download and play (Windows 10/11)
 
-[Download ZIP — repository access required](https://github.com/lingziyu186-coder/Tidal-drive/archive/refs/heads/main.zip)
+[Download ZIP](https://github.com/lingziyu186-coder/Tidal-drive/archive/refs/heads/main.zip)
 
 1. Download the ZIP, choose **Extract All**, and open the extracted `Tidal-drive-main` folder.
 2. Double-click **START-TIDAL.cmd**. Your default browser opens the game automatically.
@@ -26,7 +26,7 @@ Maintainer: [lingziyu186-coder](https://github.com/lingziyu186-coder).
 
 No Python, Node.js, commands or administrator rights are required. Windows PowerShell serves the extracted folder over local HTTP, accessible only from this computer. Use a browser with WebGL support; other operating systems need their own static HTTP server.
 
-Downloading requires access to this private GitHub repository. Once extracted, game resources load locally without GitHub or ChatGPT sign-in. If system policy blocks the launcher, contact the maintainer rather than disabling protection.
+Once extracted, game resources load locally without GitHub or ChatGPT sign-in. If system policy blocks the launcher, contact the maintainer rather than disabling protection.
 
 ## Running and controls
 
@@ -66,7 +66,7 @@ This **web runtime package** contains the launcher, HTML/CSS/JavaScript, models,
 
 The manifest lists file sizes and SHA-256 hashes, excluding itself. Hashes verify consistency, not freedom from bugs or vulnerabilities. Previous checks do not establish compatibility with every vehicle, setting, browser or GPU.
 
-Asset records do not independently verify uploader, brand, livery, design or likeness rights. Report problems through [GitHub Issues](https://github.com/lingziyu186-coder/Tidal-drive/issues), with repository access.
+Asset records do not independently verify uploader, brand, livery, design or likeness rights. Report problems through [GitHub Issues](https://github.com/lingziyu186-coder/Tidal-drive/issues).
 
 ---
 
@@ -82,7 +82,7 @@ Asset records do not independently verify uploader, brand, livery, design or lik
 
 ## 下载即玩（Windows 10/11）
 
-[下载 ZIP——需要仓库访问权限](https://github.com/lingziyu186-coder/Tidal-drive/archive/refs/heads/main.zip)
+[下载 ZIP](https://github.com/lingziyu186-coder/Tidal-drive/archive/refs/heads/main.zip)
 
 1. 下载 ZIP，选择**全部解压缩**，打开解压后的 `Tidal-drive-main` 文件夹。
 2. 双击 **START-TIDAL.cmd**，默认浏览器会自动打开游戏。
@@ -92,7 +92,7 @@ Asset records do not independently verify uploader, brand, livery, design or lik
 
 无需安装 Python、Node.js，无需输入命令或使用管理员权限。Windows PowerShell 为解压目录提供仅本机可访问的 HTTP 服务。浏览器需支持 WebGL；其他操作系统需自行提供静态 HTTP 服务。
 
-下载需要此私密 GitHub 仓库的访问权限。完整解压后，资源从本机加载，无需登录 GitHub 或 ChatGPT。如果系统策略阻止启动，请联系维护者，不要关闭安全防护。
+完整解压后，资源从本机加载，无需登录 GitHub 或 ChatGPT。如果系统策略阻止启动，请联系维护者，不要关闭安全防护。
 
 ## 运行与操作
 
@@ -132,4 +132,4 @@ Asset records do not independently verify uploader, brand, livery, design or lik
 
 清单记录文件大小和 SHA-256，不包含清单自身。哈希用于核对一致性，不代表没有错误或漏洞。先前检查也不等于所有载具、设置、浏览器和显卡均已验证兼容。
 
-素材记录不等于独立核实上传者、品牌、涂装、设计或肖像等权利。拥有仓库权限的用户可通过 [GitHub Issues](https://github.com/lingziyu186-coder/Tidal-drive/issues) 反馈问题。
+素材记录不等于独立核实上传者、品牌、涂装、设计或肖像等权利。可通过 [GitHub Issues](https://github.com/lingziyu186-coder/Tidal-drive/issues) 反馈问题。
