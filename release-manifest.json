@@ -19,7 +19,7 @@
   ],
   "models": 8,
   "fileCount": 37,
-  "totalBytesWithoutManifest": 342160793,
+  "totalBytesWithoutManifest": 342159465,
   "browserQA": false,
   "rightsChainIndependentlyVerified": false,
   "files": [
@@ -165,8 +165,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 11531,
-      "sha256": "B5DF28ECDC012263D1F3C6868C2D9DF18804063C9382BB30D44ED3D7F1296795"
+      "bytes": 10203,
+      "sha256": "9CC4CBD3C18902BC46C4784A25BDF189E73A64C39F89607B5A78671DD011917C"
     },
     {
       "file": "REMIX_POLICY_DRAFT.md",

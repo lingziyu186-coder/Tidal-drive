@@ -1,111 +1,135 @@
 # TIDAL — Ocean Driving
 
-A browser-based ocean-driving experiment: boats, personal watercraft and cars, massive waves, jumps, underwater travel, nitro and a local GLB model workbench.
+A browser-based ocean-driving game with boats, personal watercraft, cars, large waves, jumps, underwater travel, nitro boost and a local GLB model workbench.
 
 [English](#tidal--ocean-driving) · [简体中文](#潮汐-tidal)
 
-| Sunset ocean driving | Nitro boost |
+| Sunset ocean driving / 夕阳航行 | Nitro boost / 氮气加速 |
 | :---: | :---: |
-| ![Aventador on the ocean at sunset](docs/images/ocean-sunset.png) | ![Nitro exhaust and spray while crossing waves](docs/images/nitro-boost.png) |
-| **Breaking waves** | **GLB model workshop** |
-| ![Jesko approaching a breaking ocean wave](docs/images/breaking-wave.png) | ![Liquid glass GLB model workshop with DIY controls](docs/images/model-workshop.png) |
+| ![Aventador on the ocean at sunset / 夕阳海面上的 Aventador](docs/images/ocean-sunset.png) | ![Nitro exhaust and spray / 氮气尾焰与水花](docs/images/nitro-boost.png) |
+| **Breaking waves / 翻卷海浪** | **GLB model workbench / GLB 模型调试台** |
+| ![Jesko approaching a breaking wave / 接近翻卷海浪的 Jesko](docs/images/breaking-wave.png) | ![GLB model workbench / GLB 模型调试台](docs/images/model-workshop.png) |
 
-Actual in-game screenshots, not pre-rendered trailers. They include third-party vehicles and characters: see [MODEL_CREDITS.md](MODEL_CREDITS.md). Their underlying assets are not independently relicensed by these screenshots.
+In-game screenshots containing third-party vehicles and characters; see [MODEL_CREDITS.md](MODEL_CREDITS.md). The screenshots do not grant additional rights to the depicted assets.
+
+Maintainer: [lingziyu186-coder](https://github.com/lingziyu186-coder).
 
 ## Download and play (Windows 10/11)
 
 [Download ZIP — repository access required](https://github.com/lingziyu186-coder/Tidal-drive/archive/refs/heads/main.zip)
 
-1. Download the ZIP and choose **Extract All**. Open the extracted `Tidal-drive-main` folder.
+1. Download the ZIP, choose **Extract All**, and open the extracted `Tidal-drive-main` folder.
 2. Double-click **START-TIDAL.cmd**. Your default browser opens the game automatically.
 3. Press **Space** on the cover to start.
 
-Keep the TIDAL command window open while playing; close it when finished. No Python, Node.js, terminal commands or administrator rights are required. Windows PowerShell, included with Windows 10/11, starts a loopback-only server. Files are served from the extracted game folder. After downloading and extracting, the packaged game resources can load locally without GitHub or ChatGPT sign-in.
+**Keep the TIDAL command window open while playing.** You can minimise it; close it when finished. Closing it stops the local server, so vehicles that have not loaded yet will no longer load.
 
-The repository remains private; GitHub sign-in and repository access are needed to download. If Windows or an organisation's security policy blocks scripts, do not disable system protection; contact the maintainer. Use a current browser with WebGL support. Launch from the fully extracted folder, not inside the ZIP. Other operating systems can serve this folder with their preferred static HTTP server.
+No Python, Node.js, commands or administrator rights are required. Windows PowerShell serves the extracted folder over local HTTP, accessible only from this computer. Use a browser with WebGL support; other operating systems need their own static HTTP server.
 
-Maintainer: [lingziyu186-coder](https://github.com/lingziyu186-coder). English appears first, followed by Chinese. Original third-party licence texts remain authoritative for their respective material.
+Downloading requires access to this private GitHub repository. Once extracted, game resources load locally without GitHub or ChatGPT sign-in. If system policy blocks the launcher, contact the maintainer rather than disabling protection.
 
 ## Running and controls
 
-The Windows launcher serves `index.html` and its neighbouring CSS, JavaScript, models, images and licence files over local HTTP. This is a **runtime web package, not a complete reproducible source project**, and not a `file:` double-click offline build. `game.bundle.js` combines project and third-party code; a single project licence cannot cover the whole bundle. An editable source release would need a separate cleaned source package, not the private development directory.
+The game starts with **2 · Sea-Doo**. Click the game view to focus it, then press a vehicle's number key on the main keyboard, or press **F** and select it in settings:
 
-Vehicle keys: 1 wooden rowboat, 2 Sea-Doo, 3 Kawasaki, 4 Assault Boat, 5 Mercedes, 6 Xiaomi, 8 Jesko, 9 Aventador. Mazda (7), LEGO (0), the cat (minus) and its motions are excluded because a verifiable redistribution licence for their appearance was not established. Keys are not renumbered.
+| Key | Vehicle | Key | Vehicle |
+| --- | --- | --- | --- |
+| `1` | Wooden rowboat | `5` | Mercedes AMG GT3 |
+| `2` | Sea-Doo | `6` | Xiaomi SU7 Ultra |
+| `3` | Kawasaki | `8` | Koenigsegg Jesko |
+| `4` | Assault Boat | `9` | Aventador |
 
-W/S forward/back · A/D steering · E/Shift nitro · Space surface drift/underwater recovery · C stop · R reset · F settings · F11 fullscreen · Esc cover · Space on the cover starts/continues. GLB workbench: F → My Models. Importing a model does not grant rights to it; check permissions before sharing models, textures, motions or configurations.
+Built-in cars load when selected; no manual import is needed. **My Models** stores custom GLBs, so an empty library does not mean built-in vehicles are missing. Mazda (`7`), LEGO (`0`), the cat and its motions are excluded because redistribution permissions were not verified. Keys are not renumbered.
+
+- **W/S**: forward/back; **A/D**: steer; **E/Shift**: nitro boost.
+- **Space**: surface drift or underwater recovery; **C**: stop; **R**: reset.
+- **F**: settings; **F11**: fullscreen; **Esc**: cover; **Space on the cover**: start/continue.
+- **F → My Models**: import and edit a custom GLB. Keep your original GLB and exported configuration; the model library is stored in the current browser.
+
+If the launcher closes immediately, confirm that you extracted the entire ZIP and that `START-TIDAL.cmd`, `Start-Tidal.ps1` and `index.html` are in the same folder. If a vehicle fails to load, first check that the TIDAL command window is still running and `models/` is intact, then restart the launcher and reload the page. These checks do not cover every possible loading failure.
 
 ## Attribution and licensing
 
-- [CREDITS.md](CREDITS.md): actual dependencies/adaptations, asset download sources and research-only references, with corresponding files and modifications.
-- [MODEL_CREDITS.md](MODEL_CREDITS.md): creators, sources, recorded licences, modifications, sizes and SHA-256 hashes of all eight shipped GLBs. The rowboat is procedural.
-- [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), [RDEV_GLASS_NOTICE.md](RDEV_GLASS_NOTICE.md), `licenses/`: retained notices and full third-party licence texts.
-- [LICENSE_SCOPE.md](LICENSE_SCOPE.md): which terms apply to which material; this is not an all-MIT package.
+- [CREDITS.md](CREDITS.md): dependencies, adaptations, asset sources and research references.
+- [MODEL_CREDITS.md](MODEL_CREDITS.md): creators, sources, licences, changes and hashes for the eight shipped GLBs; the rowboat is procedural.
+- [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), [RDEV_GLASS_NOTICE.md](RDEV_GLASS_NOTICE.md) and [licenses/](licenses/): retained third-party notices and licence texts.
+- [LICENSE_SCOPE.md](LICENSE_SCOPE.md): terms for each part; the mixed `game.bundle.js` is not uniformly MIT-licensed.
+- [REMIX_POLICY_DRAFT.md](REMIX_POLICY_DRAFT.md): proposed credited, noncommercial remix terms for material the maintainer may license. **The draft is not effective** and does not restrict third-party MIT, CC BY or CC0 permissions.
 
-This is not an official sequel to any referenced repository or an endorsement by upstream authors, asset creators or vehicle brands. Third-party code/assets are not claimed as the maintainer's original work.
+Vehicles `6`, `8` and `9` are recorded under CC BY-NC-SA 4.0: see their notices for attribution, changes, noncommercial use and ShareAlike. Free of charge does not automatically mean noncommercial. Original third-party licence texts govern their material.
 
-The maintainer's intended policy is **credited, noncommercial reuse/remixing of material the maintainer is entitled to license**, subject to approval of the actual terms. [REMIX_POLICY_DRAFT.md](REMIX_POLICY_DRAFT.md) is not yet effective. It does not add noncommercial restrictions to third-party MIT, CC BY or CC0 material.
+Third-party work is credited to its creators; no author or brand endorsement is implied. Importing a model does not grant redistribution rights.
 
-Third-party licences remain separate. Vehicles 6, 8 and 9 are recorded under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/); corresponding model adaptations must satisfy attribution, change notices, noncommercial use and ShareAlike. Free of charge is not automatically noncommercial. The maintainer alone cannot clear third-party assets or brands for commercial use.
+## Files and verification limits
 
-Proposed attribution includes TIDAL, maintainer, actual repository URL, version/commit, portions used and your modifications, plus required upstream attribution and licence texts. The draft has a template. A private link does not grant repository access.
+This **web runtime package** contains the launcher, HTML/CSS/JavaScript, models, four screenshots, notices and [release-manifest.json](release-manifest.json). Keep them together. It is not the full development source project; do not launch `index.html` through `file:`.
 
-## Checks and limitations
+The manifest lists file sizes and SHA-256 hashes, excluding itself. Hashes verify consistency, not freedom from bugs or vulnerabilities. Previous checks do not establish compatibility with every vehicle, setting, browser or GPU.
 
-Included: runtime files, shipped GLBs, four user-selected screenshots for this README, attribution/licence documents, the pending remix draft and `release-manifest.json` file hashes. Excluded: chats, unselected test captures, private rollback versions, platform configuration, Git history and dependency installations.
-
-Previously, 293 regression checks and 11 release-specific checks passed. CPU geometry/animation checks skip image decoding and are not GPU playtests. The screenshots come from a basic browser cover/vehicle/wave smoke test, not an exhaustive test of every vehicle, setting or GPU. Documentation has consistency/privacy-pattern checks. No guarantee of universal GPU compatibility or absolute security is made.
-
-Licence records rely on downloaded metadata, retained evidence and accessible upstream licence pages, not an independent verification of every uploader's rights chain, trademark, livery, design or likeness rights. Users with repository access can report concerns through Issues; no contact email is invented. Private uploading does not itself resolve asset rights.
+Asset records do not independently verify uploader, brand, livery, design or likeness rights. Report problems through [GitHub Issues](https://github.com/lingziyu186-coder/Tidal-drive/issues), with repository access.
 
 ---
 
 # 潮汐 TIDAL
 
-海面驾驶与冲浪实验：木船、摩托艇与汽车，支持巨浪、飞跃、潜水、氮气和本地 GLB 模型调试。
+浏览器海面驾驶游戏：支持木船、摩托艇和汽车，以及巨浪、飞跃、潜水、氮气加速和本地 GLB 模型调试。
 
-上方 2×2 表格为用户提供的四张实机展示图：夕阳海面、氮气冲浪、翻卷海浪和 GLB 模型调试台，不是预渲染宣传图。截图含第三方载具与人物，署名及许可见 [MODEL_CREDITS.md](MODEL_CREDITS.md)，截图不能脱离这些权利单独改授许可。
+[English](#tidal--ocean-driving) · [简体中文](#潮汐-tidal)
+
+上方图集为实机截图，包含第三方载具与人物，来源见 [MODEL_CREDITS.md](MODEL_CREDITS.md)。截图不额外授予其中素材的使用权。
+
+维护者：[lingziyu186-coder](https://github.com/lingziyu186-coder)。
 
 ## 下载即玩（Windows 10/11）
 
 [下载 ZIP——需要仓库访问权限](https://github.com/lingziyu186-coder/Tidal-drive/archive/refs/heads/main.zip)
 
-1. 下载 ZIP，右键选择**全部解压缩**，打开解压后的 `Tidal-drive-main` 文件夹。
+1. 下载 ZIP，选择**全部解压缩**，打开解压后的 `Tidal-drive-main` 文件夹。
 2. 双击 **START-TIDAL.cmd**，默认浏览器会自动打开游戏。
 3. 在封面按**空格键**开始。
 
-游玩时保留 TIDAL 启动窗口，结束后关闭该窗口即可。无需安装 Python、Node.js，无需输入命令或使用管理员权限。启动器使用 Windows 10/11 自带的 PowerShell，只在本机提供游戏文件。下载并完整解压后，随包资源可从本机加载，启动游戏无需登录 GitHub 或 ChatGPT。
+**游玩时请保留 TIDAL 黑色启动窗口。** 可以最小化，结束后再关闭。关闭窗口会停止本机服务，尚未加载的载具将无法继续加载。
 
-仓库继续保持私密：下载时需要 GitHub 登录和仓库权限。若系统或单位安全策略阻止脚本，请联系维护者，不要关闭系统安全防护。使用支持 WebGL 的现代浏览器；请勿在 ZIP 内启动。其他操作系统可自行使用静态 HTTP 服务运行本目录。
+无需安装 Python、Node.js，无需输入命令或使用管理员权限。Windows PowerShell 为解压目录提供仅本机可访问的 HTTP 服务。浏览器需支持 WebGL；其他操作系统需自行提供静态 HTTP 服务。
 
-维护者：[lingziyu186-coder](https://github.com/lingziyu186-coder)。本文英文在前、中文在后；第三方原许可文本对相应素材有效，说明性译文不替代原文。
+下载需要此私密 GitHub 仓库的访问权限。完整解压后，资源从本机加载，无需登录 GitHub 或 ChatGPT。如果系统策略阻止启动，请联系维护者，不要关闭安全防护。
 
 ## 运行与操作
 
-Windows 双击启动器会通过本机 HTTP 服务运行 `index.html`；请保留相邻 CSS、JS、`models/`、展示图片及许可文件。这是**网页运行包，不是完整的可复现源码工程**，也不是可用 `file:` 双击的离线包。`game.bundle.js` 混合项目和第三方代码，不能给整份脚本统一套项目许可。开放可编辑源码需另备干净源码包，不能直接上传私人开发目录。
+游戏默认使用 **2 · Sea-Doo 摩托艇**。先点击游戏画面，再按主键盘上的载具数字键，或按 **F** 在设置中选择：
 
-载具按键：1 木船、2 Sea-Doo、3 Kawasaki、4 Assault Boat、5 Mercedes、6 小米、8 Jesko、9 Aventador。7 号 Mazda、0 号 LEGO、减号猫咪及动作因缺少可核实的外观再分发许可未随包，编号不重排。
+| 按键 | 载具 | 按键 | 载具 |
+| --- | --- | --- | --- |
+| `1` | 木船 | `5` | Mercedes AMG GT3 |
+| `2` | Sea-Doo | `6` | 小米 SU7 Ultra |
+| `3` | Kawasaki | `8` | Koenigsegg Jesko |
+| `4` | Assault Boat | `9` | Aventador |
 
-W/S 前后、A/D 转向、E/Shift 氮气、Space 水面漂移/水下上浮、C 停车、R 复位、F 设置、F11 全屏、Esc 封面、封面 Space 开始/继续。GLB 入口在 F → 我的模型。导入不代表取得素材权利，分享模型、纹理、动作或配置前需自行确认权限。
+内置汽车在切换时加载，**不需要手动导入**。“我的模型”存放自定义 GLB，列表为空不代表缺少内置载具。Mazda（`7`）、LEGO（`0`）、猫咪及其动作因再分发权限未核实而未随包，编号不重排。
+
+- **W/S**：前后；**A/D**：转向；**E/Shift**：氮气加速。
+- **Space**：水面漂移或水下上浮；**C**：停车；**R**：复位。
+- **F**：设置；**F11**：全屏；**Esc**：封面；**封面 Space**：开始/继续。
+- **F → 我的模型**：导入、编辑自定义 GLB。请另存原始 GLB 和导出的配置，模型库保存在当前浏览器中。
+
+若启动窗口闪退，先确认已完整解压 ZIP，且 `START-TIDAL.cmd`、`Start-Tidal.ps1` 和 `index.html` 位于同一文件夹。若载具加载失败，先检查 TIDAL 启动窗口是否仍在运行、`models/` 是否完整，再重新启动并刷新页面。这些步骤不能涵盖所有加载失败原因。
 
 ## 来源、借鉴与许可
 
-- [CREDITS.md](CREDITS.md)：区分实际使用/改编、素材下载来源与仅作研究参考，注明文件与改动。
-- [MODEL_CREDITS.md](MODEL_CREDITS.md)：8 个实际 GLB 的作者、来源、许可、改动、大小和 SHA-256；木船为程序化几何。
-- [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)、[RDEV_GLASS_NOTICE.md](RDEV_GLASS_NOTICE.md)、`licenses/`：完整第三方声明与许可。
-- [LICENSE_SCOPE.md](LICENSE_SCOPE.md)：各部分适用范围，本包不是统一 MIT 许可。
+- [CREDITS.md](CREDITS.md)：依赖、改编、素材来源与研究参考。
+- [MODEL_CREDITS.md](MODEL_CREDITS.md)：随包 8 个 GLB 的作者、来源、许可、改动与哈希；木船为程序化几何。
+- [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)、[RDEV_GLASS_NOTICE.md](RDEV_GLASS_NOTICE.md) 和 [licenses/](licenses/)：保留的第三方声明与许可正文。
+- [LICENSE_SCOPE.md](LICENSE_SCOPE.md)：各部分适用条款；混合代码 `game.bundle.js` 不是统一 MIT 许可。
+- [REMIX_POLICY_DRAFT.md](REMIX_POLICY_DRAFT.md)：针对维护者有权授权材料的署名、非商业二创候选条款。**草案尚未生效**，不会收紧第三方 MIT、CC BY 或 CC0 权限。
 
-项目不是任何被参考仓库的官方续作，不暗示上游、素材作者或车辆品牌背书；不把第三方代码或素材宣称为维护者原创。
+载具 `6`、`8`、`9` 的许可记录为 CC BY-NC-SA 4.0，署名、改动、非商业和同许可要求见相应声明。免费不自动等于非商业。第三方原许可正文适用于对应材料。
 
-维护者意向为：**对其有权授权的自有材料，允许署名的非商业使用和二创，具体条款须先确认**。[REMIX_POLICY_DRAFT.md](REMIX_POLICY_DRAFT.md) 尚未生效，也不为第三方 MIT、CC BY、CC0 追加非商业限制。
-
-第三方许可仍各自有效。载具 6、8、9 的记录为 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)，相应模型改编须遵守署名、改动说明、非商业、同许可等义务。免费不自动等于非商业；维护者不能单独替第三方资产或品牌授予商用许可。
-
-拟议署名需包含 TIDAL、维护者、实际仓库链接、版本/提交、采用部分、改动及必要上游署名/许可；模板见草案。私密链接不授予仓库访问权限。
+第三方作品署名归其创作者，不暗示作者或品牌为项目背书。导入模型不等于取得再分发权限。
 
 ## 文件与检查边界
 
-包含运行文件、实际 GLB、四张用户精选实机图、来源/许可文档、待确认草案和 `release-manifest.json` 哈希清单；不含聊天、其他测试截图、私人回退、平台配置、Git 历史或依赖安装目录。
+这是**网页运行包**，包含启动器、HTML/CSS/JavaScript、模型、四张截图、声明和 [release-manifest.json](release-manifest.json)。请保留文件的相对位置。它不是完整开发源码工程，请勿通过 `file:` 直接运行 `index.html`。
 
-此前 293 项回归与 11 项发布专项检查通过。CPU 几何/动作检查跳过纹理解码，不是 GPU 试玩。展示图来自浏览器封面、换车与海浪的简单检查，不等于全部载具、设置、显卡已完整验收。另有文档一致性及隐私模式检查，不保证显卡零问题或绝对无安全漏洞。
+清单记录文件大小和 SHA-256，不包含清单自身。哈希用于核对一致性，不代表没有错误或漏洞。先前检查也不等于所有载具、设置、浏览器和显卡均已验证兼容。
 
-许可记录依据下载元数据、留存证据及上游许可页，不等于独立核实所有上传者权利链、商标、涂装、设计、肖像等权利。有仓库权限者可通过 Issues 反馈，未虚构联系邮箱；私密上传不自动解决素材权限问题。
+素材记录不等于独立核实上传者、品牌、涂装、设计或肖像等权利。拥有仓库权限的用户可通过 [GitHub Issues](https://github.com/lingziyu186-coder/Tidal-drive/issues) 反馈问题。
